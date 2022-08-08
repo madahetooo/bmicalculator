@@ -67,13 +67,13 @@ class _TodoUiState extends State<TodoUi> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10.0),
       ),
-      title: Text(
+      title: const Text(
         "Add Task"
       ),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          TextField(
+          const TextField(
             autofocus: true,
             style: TextStyle(
               fontSize: 10.0,
@@ -85,7 +85,7 @@ class _TodoUiState extends State<TodoUi> {
               // ignore: deprecated_member_use
               RaisedButton(onPressed: (){},
                 color: Colors.purple,
-              child: Text("Add"),)
+              child: const Text("Add"),)
             ],
           )
         ],
